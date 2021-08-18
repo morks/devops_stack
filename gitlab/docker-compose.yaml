@@ -27,7 +27,7 @@ services:
     container_name: gitlab-runner1
     hostname: gitlab-runner1
     volumes:
-      - gitlab-runner:/etc/gitlab-runner:Z'
+      - gitlab-runner:/etc/gitlab-runner'
       - '/var/run/docker.sock:/var/run/docker.sock'
     networks:
       - gitlab-network
