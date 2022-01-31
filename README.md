@@ -1,2 +1,4 @@
-# devops_stack
-a simple devops stack 
+# DevOps Stack
+
+A collection of docker-compose files to build your development environment 
+

@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+  checkmk:
+    image: checkmk/check-mk-raw:1.5.0-latest
+    container_name: checkmk
+    hostname: checkmk
+    volumes:
+      - checkmk-sites:/omd/sites
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - '8080:5000'
+    networks:
+      - checkmk-network
+
+networks:
+  checkmk-network:
+    name: checkmk-network
+
+
+volumes:
+  checkmk-sites:
+
+
+  
